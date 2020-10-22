@@ -11,7 +11,7 @@ if pidof -o %PPID -x "$0"; then
 fi
 
 LOGFILE="/root/logs/gclone-upload.log"
-FROM="/root/download1/"
+FROM="/root/1Dowloads/"
 TO="gc:{0AIQoIeNV-ojTUk9PVA}"
 
 # CHECK FOR FILES IN FROM FOLDER THAT ARE OLDER THAN 15 MINUTES
