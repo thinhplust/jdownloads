@@ -1,0 +1,19 @@
+# ============================= FORM ============================= #
+#@markdown #### ⬅️ Execute JDownloader
+#@markdown
+NEW_Account = False
+# ================================================================ #
+
+from os import path as _p
+
+if not _p.exists("/root/.ipython/rlab_utils.py"):
+    from shlex import split as _spl
+    from subprocess import run  # nosec
+
+    shellCmd = "wget -qq https://dl.dropboxusercontent.com/s/ehghrp6hm202zji/rlab_utils.py \
+                    -O /root/.ipython/rlab_utils.py"
+    run(_spl(shellCmd))  # nosec
+
+from rlab_utils import handleJDLogin
+
+handleJDLogin(NEW_Account)
