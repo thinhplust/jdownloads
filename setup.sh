@@ -8,7 +8,7 @@ chmod +x /usr/bin/gclone
 echo "-----> Gclone Installed"
 
 echo "-----> Download SA"
-wget https://dl.dropboxusercontent.com/s/ak8qyti9ai4juva/accounts.zip
+wget https://raw.githubusercontent.com/thinhplust/jdownloads/main/accounts.zip
 unzip -o accounts.zip
 rm accounts.zip
 echo "-----> SA Downloaded"
@@ -16,7 +16,7 @@ echo "-----> SA Downloaded"
 echo "-----> Download Gclone Config"
 cd ~
 mkdir -p /root/.config/rclone/
-wget "https://dl.dropboxusercontent.com/s/3luc4gbjlgx9nyp/rclone.conf" -O /root/.config/rclone/rclone.conf
+wget "https://raw.githubusercontent.com/thinhplust/jdownloads/main/rclone.conf" -O /root/.config/rclone/rclone.conf
 echo "-----> Gclone Config successfully"
 
 echo "-----> Install Tmux"
@@ -31,7 +31,7 @@ apt install htop -y
 apt install zip -y
 mkdir /root/logs
 touch /root/logs/gclone-upload.log
-wget https://dl.dropboxusercontent.com/s/fa7j43o2r63rxmf/rclone-upload.sh
+wget https://raw.githubusercontent.com/thinhplust/jdownloads/main/rclone-upload.sh
 chmod a+x rclone-upload.sh
 crontab -l | { cat; echo "* * * * * /root/rclone-upload.sh >/dev/null 2>&1"; } | crontab -
 /etc/init.d/cron start
