@@ -1,6 +1,1 @@
-127.0.0.1 vlxx.host/ads/rik-preload.gif
-127.0.0.1 vlxx.host/ads/rik-top.gif
-127.0.0.1 vlxx.host/ads/q1.gif
-127.0.0.1 vlxx.host/ads/rik-catfish.gif
-127.0.0.1 vlxx.host/ads/b52.gif
-127.0.0.1 vlxx.host/ads/may88-cafish3.gif
+||vlxx.host^
