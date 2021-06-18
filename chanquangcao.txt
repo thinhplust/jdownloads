@@ -1,2 +1,2 @@
-||vlxx.host^
+||vlxx.host^*.gif
 ||rikvip.us^
